@@ -69,7 +69,7 @@ jobs:
           context: .
           file: build/package/Dockerfile
           push: true
-          platforms: linux/amd64,linux/arm64,linux/arm,linux,arm/v6
+          platforms: linux/amd64,linux/arm64,linux/arm,linux/arm/v6
           build-args: |
               "APPLICATION=${{ github.event.repository.name }}"
               "BUILD_RFC3339=${{ env.RELEASE_DATE }}"
